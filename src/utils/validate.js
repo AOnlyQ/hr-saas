@@ -20,6 +20,16 @@ export function validUsername(str) {
 }
 
 /**
+ * 校验手机号
+ * @param {string} str
+ * @returns {Boolean}
+ *
+ */
+export function validMobile(str) {
+  return /^1[3-9]\d{9}$/.test(str) // 校验手机号
+}
+
+/**
  * @param {string} url
  * @returns {Boolean}
  */
